@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Artifact Evaluation: About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+<div class="container">
+
+  <div class="hero-unit">
+
+    <table>
+      <tr>
+        <td width="60%">
+
+<h2>About Artifact Evaluation</h2>
+
+        </td>
+        <td>
+<img src="img/pistons.JPG">
+	</td>
+      </tr>
+    </table>
+
+  </div>
+
+<p> This year, PLDI is initiating a novel experiment: giving authors
+the opportunity to submit for evaluation any artifacts that accompany
+their papers.  A similar experiment ran successfully for ESEC/FSE
+2011, ECOOP 2013, and OOPSLA 2013, and we want to build on its
+success.  This document describes the goals and mechanics of this
+process.  </p>
+
+<p>If you're just looking for the packaging guidelines,
+  <a href="guidelines.html">go directly to them</a>.
+  </p>
+
+<h2>Background</h2>
+
+  <p>
+A paper consists of a constellation of artifacts that extend beyond
+the document itself: software, proofs, models, test suites,
+benchmarks, and so on.  In some cases, the quality of these artifacts
+is as important as that of the document itself, yet our conferences
+offer no formal means to submit and evaluate anything but the paper.
+We are creating an Artifact Evaluation Committee (AEC) to remedy this
+situation.
+  </p>
+
+<h2>Goals</h2>
+
+  <p>
+Our goal is two-fold: to both reward and probe.  Our primary goal is
+to reward authors who take the trouble to create useful artifacts
+beyond the paper.  Sometimes the software tools that accompany the
+paper take years to build; in many such cases, authors who go to this
+trouble should be rewarded for setting high standards and creating
+systems that others in the community can build on.  Conversely,
+authors sometimes take liberties in describing the status of their
+artifacts&mdash;claims they would temper if they knew the artifacts are
+going to be scruitinized.  This leads to more accurate reporting.
+  </p>
+
+  <p>
+Our hope is that eventually, the assessment of a paper's accompanying
+artifacts will guide the decision-making about papers: that is, the
+AEC will inform and advise the Program Committee (PC).  This would,
+however, represent a radical shift in our conference evaluation
+processes; we would rather proceed gradually.  Thus, in our process,
+artifact evaluation is optional, and authors choose to undergo
+evaluation only after their paper has been accepted.
+  </p>
+
+<h2>Criteria</h2>
+
+<p>
+The evaluation criteria are ultimately simple. A paper sets up certain
+expectations of its artifacts based on its content. The AEC will read
+the paper and then judge how well the artifact matches these criteria.
+Thus the AEC's decision will be that the artifact
+      <em>does</em> or <em>does not</em> &ldquo;conform to the
+      expectations set by the paper&rdquo;. Ultimately, we expect
+      artifacts to be:
+      <ul>
+	<li>consistent with the paper,</li>
+	<li>as complete as possible,</li>
+	<li>documented well, and</li>
+	<li>easy to reuse, facilitating further research.</li>
+      </ul>
+</p>
+
+<h2>Benefits</h2>
+
+  <p>
+We believe the dissemination of artifacts benefits our science and
+engineering as a whole.  Their availability improves reproducibility,
+and enables authors to build on top of each others' work.  It can also
+help more unambiguously resolve questions about cases not considered
+by the original authors.
+  </p>
+
+  <p>
+Beyond helping the community as a whole, it confers several direct and
+indirect benefits to the authors themselves.  The most direct benefit
+is, of course, the recognition that the authors accrue.  But the very
+act of creating a bundle that can be used by the AEC confers also
+helps:
+<ul>
+
+<li>The same bundle can be distributed to third-parties.</li>
+
+<li>A reproducible bundle can be used subsequently for later experiments
+  (e.g., on new parameters).</li>
+
+<li>The bundle simplifies having to re-run the system subsequently when,
+  say, having to respond to a journal reviewer's questions.</li>
+
+<li>The bundle is more likely to survive being put in storage between
+  the departure of one student and the arrival of the next.</li>
+
+</ul>
+</p>
+
+  <p>
+However, creating a bundle that meets all these properties can be
+onerous.  Therefore, the process we describe below does not require an
+artifact to have all these properties.  It offers a route to
+evaluation that confers fewer benefits for vastly less effort.
+  </p>
+
+<h2>Rewards</h2>
+
+<p>
+Because our focus is on rewards, we propose three.  For papers whose
+artifacts pass muster:
+</p>
+
+<p>
+First, authors will get additional time to present, either in a
+separate track or as an addition to their paper presentation.
+</p>
+
+<p>
+Second, papers will get an additional page to describe the artifact.
+</p>
+
+<p>
+Finally, they will be mentioned in the proceedings and at the
+conference.  Artifacts that are deemed especially meritorious will be
+singled out for special recognition.
+</p>
+
+<h2>Membership</h2>
+
+<p>
+The AEC will consist of about a dozen members.  Other than the chairs,
+we intend for all other members to be senior graduate students,
+identified with the help of current, active researchers.
+</p>
+
+<p>
+We believe qualified graduate students are often in a much better
+position than many researchers to handle the diversity of systems
+expectations we will encounter.  In addition, these graduate students
+represent the future of the community, so involving them in this
+process early will help push this process forward.
+</p>
+
+<p>
+Naturally, the AEC chairs will devote considerable attention to both
+mentoring and monitoring, helping to educate the students on their
+responsibilities and privileges.
+</p>
+
+<h2>Process</h2>
+
+<p>
+To maintain a wall of separation between paper review and the
+artifacts, authors will only be asked to upload their artifacts after
+their papers have been accepted.  Of course, they can (and should!) 
+prepare their artifacts well in advance, and can provide the artifacts
+to the PC through unofficial URLs contained in their papers, as many
+authors already do.
+</p>
+
+<p>
+The authors of all accepted papers will be asked whether they intend
+to have their artifact evaluated and, if so, to upload the artifact.
+They are welcome to indicate that they do not.  Since we anticipate
+small glitches with installation and use, the AEC reserves the right
+to send a one-time message to the authors requesting clarification.
+Authors can submit a one-time response, focusing solely on the
+questions of the AEC; we do not impose a word-limit (since, e.g., a
+code attachment may be needed), but strongly suggest that the prose be
+no longer than 1000 words.  Based on these inputs, the AEC will
+complete its evaluation and notify authors of the outcome.
+</p>
+
+<p>
+Authors are welcome to ignore the feedback or to include it in their
+paper as they deem fit (as a footnote, a section, etc.). Meritorious
+papers can include a lovely badge (courtesy Matthias Hauswirth):
+<center>
+<img src="aec-badge-pldi.svg" width=300px alt="[badge]">
+</center>
+
+<h2>Artifact Details</h2>
+
+<p>
+To avoid excluding some papers, the AEC will accept <em>any</em> artifact
+that authors wish to submit.  These can be tools but can also be test
+suites, models, proofs, etc.  Obviously, the better the artifact is
+packaged, the more likely the AEC can actually work with it.
+</p>
+
+<p>
+In all cases, the AEC will accept a <em>video</em> of the artifact in use.
+These may include screencasts of the software being run on the
+examples in the paper, traversals of models using modeling tools,
+stepping through a proof script, etc.  The video is, of course, not a
+substitute for the artifact itself, but this provides an evolutionary
+path that imposes minimal burden on authors.
+</p>
+
+<p>
+The details of packaging the artifact will be published separately.
+</p>
+
+<p>
+Submission of an artifact does not contain tacit permission to make
+its content public.  AEC members will be instructed that they may not
+publicize any part of your artifact during or after completing
+evaluation, nor retain any part of it after evaluation.  Thus, you are
+free to include models, data files, proprietary binaries, etc. in your
+artifact.  We do strongly encourage that you anonymize any data files
+that you submit.
+</p>
+
+<p>
+We recognize that some artifacts may attempt to perform malicious
+operations by design.  These cases should be boldly and explicitly
+flagged in detail in the readme so Board members can take appropriate
+precautions before installing and running these artifacts.
+</p>
+
+<div>
+
+  </body>
+</html>

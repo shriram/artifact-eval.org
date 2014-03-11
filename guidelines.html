@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Artifact Evaluation: Guidelines</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+<div class="container">
+
+  <div class="hero-unit">
+
+    <table>
+      <tr>
+        <td width="60%">
+
+<h2>Guidelines for Packaging AEC Submissions</h2>
+
+        </td>
+        <td>
+<img src="img/pistons.JPG">
+	</td>
+      </tr>
+    </table>
+
+  </div>
+
+<p>
+Below we outline guidelines on how to package artifacts for
+submission.  We are open to possibilities that we have not considered
+below; however, in cases where systems ought to fit these options, we
+suggest authors use them.  
+</p>
+
+<p>
+In all cases, the artifacts should be accompanied by suitable
+documentation, to save committee members the burden of
+reverse-engineering what the authors intended (e.g., a dataset is
+useless without some explanation on how to browse the data; a tool
+without a quick tutorial will be very hard to use).  In particular,
+please make concrete what claims you are making of the artifact, if
+these differ from the expectations set up by the paper.  This is a
+place where you can tell us about difficulties we might encounter in
+using the artifact, or its maturity relative to the content of the
+paper.  We are still going to evaluate the artifact relative to the
+paper, but this helps set expectations up front, especially in cases
+that might frustrate the reviewers without prior notice.
+</p>
+
+<hr>
+
+<h2>TL;DR</h2>
+
+<p>
+Create a submission with the same title as the paper. In the abstract
+  field, include two things:
+  <ul>
+    <li>the paper's abstract (to help with bidding)</li>
+    <li>a <strong>URL</strong> pointing to the artifact site</li>
+  </ul>
+There is no &ldquo;paper&rdquo; to submit.
+</p>
+
+<p>
+At this URL, give us access to:
+  <ul>
+    <li>the artifact</li>
+    <li><em>the accepted version of the paper</em></li>
+    <li>instructions</li>
+  </ul>
+See below for additional details.
+</p>
+
+<hr>
+
+<h2>Conflicts</h2>
+
+<p>
+If one of the authors is an AEC chair, you may <em>not</em> submit an
+artifact. You can, however, indicate in your paper that you were
+unable to submit an artifact due to the conflict-of-interest.
+</p>
+
+<p>
+If you have a conflict-of-interest with anyone on the committee
+(including the three chairs), please indicate this in both the Web
+page and in your submission email.
+</p>
+
+<hr>
+
+<h2>Artifact Submission</h2>
+
+<p>
+Irrespective of the nature of the artifacts, authors should 
+create a <em>single Web page</em> (whether on their site or a third-party
+file upload service) that contains <em>the artifact, the paper, and all necessary instructions</em>. 
+<p>
+
+<p>
+For artifacts where this would be appropriate, it would be helpful to
+also provide a self-contained bundle (including instructions) as a
+single file (<tt>.tgz</tt> or <tt>.zip</tt>; please avoid exotic
+compressors) for convenient offline use: imagine the reviewer who
+wants to download a single file to expand and work with during a train
+or bus commute.
+</p>
+
+<p>
+If it would be helfpul, please feel free to include a video that
+demonstrates the artifact running or explaining how it should be run.
+</p>
+
+<p>
+The artifact submission thus consists of just the URL and any
+credentials required to access the files.
+</p>
+
+<hr>
+
+<h2>Confidentiality</h2>
+
+<p>
+We ask that, during the evaluation period, you not embed any analytics
+or other tracking in the Web site for the artifact or, if you cannot
+control this, that you not access this data. This is important for
+maintaining the confidentiality of reviewers. If for some reason you
+cannot comply with this, please notify the chairs immediately.
+</p>
+
+<hr>
+
+<h2>Code Artifacts Packaging</h2>
+
+<p>
+Authors should strongly consider one of the following methods to
+package the software components of their artifacts (though the AEC is
+open to other reasonable formats as well):
+</p>
+
+<ol>
+
+<li>
+   A VM (Virtualbox/VMWare) image containing software application
+   already setup in the intended run-time environment (e.g., Mobile
+   phone emulator, Real time OS). This is the preferred option: It
+   avoids installation and compatibility problems, and provides the
+   best guarantees for reproducibility of the results by the
+   committee.  Authors using Linux might find the <a href="http://www.pgbovine.net/cde.html">CDE</a> tool 
+   useful for automatically creating a VM image from existing software
+   without needing to manually re-install all dependencies within a
+   VM.
+</li>
+
+<li>
+   A binary installable package. We invite the authors to use CDE
+   (Linux) or MSI Installer (Windows) to package the binary
+   application.
+</li>
+
+<li>
+   A live instance running on the Web.
+</li>
+
+<li>
+   A detailed screen-cast of the tool along with the results,
+   especially if one of the following special cases applies:
+
+<ul>
+  <li>the application needs proprietary/commercial software that is not
+    easily available or cannot be distributed to the committee;</li>
+
+  <li>the application requires significant computation resources (e.g.,
+    &gt; 24 hours of execution time to produce the results);</li>
+</ul>
+</li>
+
+<li>
+   An installation or update repository for the tool (e.g., Eclipse
+   update site or a Debian APT repository). However, we urge the
+   authors to test their repository on standard environments to avoid
+   installation problems by the committee members.
+</li>
+
+</ol>
+
+<p>
+<em>In all cases</em>, authors should make a genuine effort to not learn
+the identity of the reviewers.  This may mean turning off &ldquo;call
+home&rdquo; features or analytics, or only using systems with high
+enough usage that AEC accesses will not stand out.  In all cases where
+tracing is unavoidable, the authors should warn the reviewers in
+advance so the reviewers can try to take adequate safeguards.
+</p>
+
+<hr>
+
+<h2>Non-Code Artifacts Format</h2>
+
+<p>
+Non-code artifacts should preferably be in open document formats. For
+documents and reports, we invite the authors to use PDF, ODF, or
+RTF. We invite the authors to submit experimental data and results in
+CSV (preferred option), JSON, or XML file formats.  In the special
+case that authors have to submit non-standard data formats, they
+should also provide suitable readers.
+</p>
+
+</div>
+
+  </body>
+</html>
